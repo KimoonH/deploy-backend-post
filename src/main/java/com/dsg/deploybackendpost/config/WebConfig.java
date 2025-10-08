@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000", "https://43.203.106.199:3000", "http://dsgpost.shop", "https://dsgpost.shop", "https://api.dsgpost.shop") // Next.js 기본 포트
+                .allowedOrigins("http://localhost:3000", "http://43.203.106.199:3000", "http://dsgpost.shop", "https://dsgpost.shop", "https://api.dsgpost.shop") // Next.js 기본 포트
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
                 .allowedHeaders("*")
                 .exposedHeaders("Access-Control-Allow-Origin", "Access-Control-Allow-Credentials")
